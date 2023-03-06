@@ -1,1 +1,1 @@
-"# Simple PHP Captcha Generator" 
+# Simple PHP Captcha Generator
