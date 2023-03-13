@@ -1,6 +1,12 @@
 <?php
 
+if(!isset($_SESSION)) {
+    session_start();
+}
+
 $value = rand(100, 999);
+
+$_SESSION['captcha'] = $value;
 
 $captcha = imagecreatefromjpeg("images/captcha-".rand(1,3).".jpg");
 
